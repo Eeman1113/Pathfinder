@@ -34,10 +34,10 @@ b=st.text_input("Enter the name of the file you wanna find in the repository")
 k=st.button("Run")
 
 #___________________________________________________________________________________________________________________
-if a==None:
+if a=='':
     st.write("Please Enter the link of the github repository")
 else:
-    if b==None:
+    if b=='':
         st.write("Please Enter the name of the file you wanna find in the repository")
     else:
         if k:
@@ -57,4 +57,5 @@ else:
             st.write(link)
             st.markdown("___")
             os.system("rm -rf "+folder_name)
+            os.system("clear")
 #___________________________________________________________________________________________________________________
