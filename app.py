@@ -35,10 +35,10 @@ k=st.button("Run")
 
 #___________________________________________________________________________________________________________________
 if a=='':
-    st.exception("Please Enter the link of the github repository")
+    st.info("Please Enter the link of the github repository")
 else:
     if b=='':
-        st.exception("Please Enter the name of the file you wanna find in the repository")
+        st.info("Please Enter the name of the file you wanna find in the repository")
     else:
         if k:
             os.system("git clone "+a)
