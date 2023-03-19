@@ -52,14 +52,9 @@ else:
             st.markdown("___")
             st.write("The File Can Be Found Here: ")
             #make the link for the file 
-            if b==None:
-                st.write("No file found")
-            else:
-                link=a+"/blob/main/"+find_file(b,folder_name).split("/")[-1]
-                st.write(link)
+            
+            link=a+"/blob/main/"+find_file(b,folder_name).split("/")[-1]
+            st.write(link)
             st.markdown("___")
             os.system("rm -rf "+folder_name)
-        
 #___________________________________________________________________________________________________________________
-        
-        
